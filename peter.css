@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+}
+
+.logo {
+    flex-grow: 1;
+}
+.logo img{
+    width: 50px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0; 
+    padding: 0; 
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+.nav-links a:hover{
+    color: #c71515;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.home .text-content {
+    max-width: 600px;
+}
+
+.home h1 {
+    max-width: 600px;
+    font-size: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.home .highlight {
+    color: #c71515;
+}
+
+.home p {
+    max-width: 600px;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.read-more {
+    background-color: #c71515;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;       
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+.read-more:hover{
+    color:#c71515;
+    background-color: #000000; 
+    transform: translateY(-2px); 
+}
+.text-content img{
+    display: block;
+    max-width: 30%;
+    max-height: 30%;
+    position: relative;
+}
+
+.spidey-image img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+}
+
+
+/* About */
+
+#about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.about-text{
+    max-width: 600px;
+}
+.about-text h2 {
+    position: relative;
+    bottom: 50px;
+    font-size: 60px;
+    color: #c71515;
+}
+
+.about-text p {
+    max-width: 600px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.bullet {
+    color: #c71515;
+    font-size: 48px;
+    margin-right: 10px;
+}
+
+ .spidey-about-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* history */
+
+.section-title {
+    position: relative;
+    color: red;
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+}
+
+.image-box {
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+
+.image-box:hover {
+    transform: scale(1.1);
+}
+
+.image-box:hover img {
+    transform: scale(1.2);
+}
+
+.history-section, .villains-section {
+    padding: 40px 0;
+}
+
+
