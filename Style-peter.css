@@ -246,7 +246,24 @@ img {vertical-align: middle;}
     object-fit: cover;
     transition: transform 0.3s ease;
 }
+.popup-text {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 1;
+}
 
+
+.image-box:hover .popup-text {
+    display: block;
+}
 
 .image-box:hover {
     transform: scale(1.1);
